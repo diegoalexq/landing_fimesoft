@@ -1,0 +1,43 @@
+.services {
+  display: flex;
+  flex-wrap: wrap;  // Añadido: Permite que los elementos se muevan a la siguiente línea en dispositivos pequeños
+  justify-content: space-between;
+  height: 480px;
+  background-color: #f0f0f0;
+  padding: 20px;
+
+  .service-card {
+    flex: 1;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;  // Añadido: Espaciado entre las cards
+
+    h3 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+
+    .arrow-button {
+      background-color: white;
+      border: 2px solid #03a6a6;
+      border-radius: 50%;
+      padding: 10px;
+      cursor: pointer;
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .service-card {
+      flex: 0 0 100%;  // Añadido: Ocupa todo el ancho en dispositivos móviles
+      margin-right: 0;
+    }
+  }
+}

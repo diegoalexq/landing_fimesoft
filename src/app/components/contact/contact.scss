@@ -1,0 +1,40 @@
+.contact {
+  max-width: 400px;
+  margin: 0 auto;
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    .form-group {
+      margin-bottom: 20px;
+
+      label {
+        margin-bottom: 8px;
+      }
+
+      input,
+      textarea {
+        border: 1px solid #03a6a6;
+        border-radius: 5px;
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      .error {
+        color: red;
+        margin-top: 5px;
+      }
+    }
+
+    .submit-button {
+      background-color: #03a6a6;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      cursor: pointer;
+    }
+  }
+}
