@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from 'react';
-import './Header.scss';
 
 const Header = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -11,7 +10,7 @@ const Header = () => {
 
   return (
     <header className={`header ${isMenuOpen ? 'menu-open' : ''}`}>
-      <h1>Fimesoft</h1>
+      <img src="img/logo-fimesoft_prev_ui.png" alt='logo' width={200} />
       <div className={`burger-menu ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
         <div className="bar"></div>
         <div className="bar"></div>
@@ -19,7 +18,10 @@ const Header = () => {
       </div>
       <nav className={`menu ${isMenuOpen ? 'open' : ''}`}>
         <ul>
-          <li>Nosotros</li>
+          <li>Home</li>
+          <li>Acerca de</li>
+          <li>Servicios</li>
+          <li>Blog</li>
           <li>Contacto</li>
         </ul>
       </nav>

@@ -1,6 +1,5 @@
 import React from 'react';
 import { IoIosArrowForward } from 'react-icons/io';
-import './services.scss';
 
 const Services = () => {
   const servicesData = [

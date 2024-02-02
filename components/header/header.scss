@@ -3,8 +3,14 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-color: #333;
+  background: #f0f0f0;
   color: white;
+  border: 1px solid red;
+
+  &__logo {
+    width: 25px;
+    height: 25px;
+  }
 
   h1 {
     margin: 0;
@@ -37,6 +43,7 @@
 
       li {
         margin-right: 20px;
+        color: #03a6a6;
 
         &:last-child {
           margin-right: 0;
