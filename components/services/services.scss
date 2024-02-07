@@ -1,18 +1,23 @@
+@import '../../styles/colors.module.scss';
+
 .services {
   display: flex;
   flex-wrap: wrap;  // Añadido: Permite que los elementos se muevan a la siguiente línea en dispositivos pequeños
   justify-content: space-between;
-  height: 480px;
-  background-color: #f0f0f0;
+  height: 350px;
+  background-color: $background-gray;
   padding: 20px;
+  height: auto;
 
   .service-card {
     flex: 1;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
     margin-bottom: 20px;
+    border: 1px solid $primary-color;
+    height: 300px;
 
     h3 {
       font-size: 1.5em;
@@ -21,7 +26,7 @@
 
     .arrow-button {
       background-color: white;
-      border: 2px solid #03a6a6;
+      border: 2px solid $primary-color;
       border-radius: 50%;
       padding: 10px;
       cursor: pointer;
@@ -37,6 +42,8 @@
     .service-card {
       flex: 0 0 100%;  // Añadido: Ocupa todo el ancho en dispositivos móviles
       margin-right: 0;
+      height: 300px;
+      border: 1px solid $primary-color;
     }
   }
 }

@@ -17,6 +17,7 @@ const Contact = () => {
 
   return (
     <div className="contact">
+      <h2>Contactanos</h2>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="form-group">
           <label htmlFor="firstName">Nombre</label>

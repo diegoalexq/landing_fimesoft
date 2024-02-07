@@ -1,6 +1,9 @@
 import React from 'react';
 import { IoIosArrowForward } from 'react-icons/io';
 
+import colors from '../../styles/colors.module.scss';
+
+
 const Services = () => {
   const servicesData = [
     { title: 'Servicio 1' },
@@ -15,7 +18,7 @@ const Services = () => {
         <div className="service-card" key={index}>
           <h3>{service.title}</h3>
           <button className="arrow-button">
-            <IoIosArrowForward color="#03a6a6" />
+            <IoIosArrowForward color={colors.primaryColor} />
           </button>
         </div>
       ))}
