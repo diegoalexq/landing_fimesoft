@@ -3,7 +3,12 @@ import React from 'react';
 const Content = () => {
   return (
     <div className="content">
-      <h1>Hello, Content!</h1>
+      <div>
+        <h4>Estamos optimizando los entornos de atención médica</h4>
+      </div>
+      <div>
+        <img src="img/medicos_fimesoft.jpeg" alt="profesionales" width={450}  />
+      </div>
     </div>
   );
 };
