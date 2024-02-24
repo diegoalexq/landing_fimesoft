@@ -3,6 +3,7 @@ import Header from '../../components/header';
 import Content from '../../components/content';
 import Services from '../../components/services';
 import Contact from '../../components/contact';
+import Footer from '../../components/footer';
 import '../../styles/global.scss';
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
         <Content />
         <Services />
         <Contact />
+        <Footer />
       </div>
     </main>
   );
